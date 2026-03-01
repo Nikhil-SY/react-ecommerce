@@ -1,0 +1,10 @@
+name: First_Workflow
+on: workflow_dispatch #used to trigger workflows manually
+jobs:
+  first-Job: #name can be anything
+    runs_on: ubuntu-22.04 #selecting the runner to run the job
+    steps:
+      - name: First_Step
+        run: echo "This is first step"
+      - name: Second_Step
+        run: echo "This is second step"
